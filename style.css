@@ -1,23 +1,14 @@
-:root {
-    --prime-font: 'Work Sans', sans-serif;
-    /* font-family: 'Dancing Script', cursive;
-    font-family:  'Montserrat', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Yellowtail', cursive; */
-}
 
 * {
-    font-family: var(--prime-font);
+    font-family:  'Work Sans', sans-serif;
     box-sizing: border-box;
     max-width: 1250px;
-
     margin: 0 auto;
     padding: 0;
 }
+
 .nav-bar , .first-section , .banner-section{
     background-color: #fff4e7;
-    background-size:cover ;
     height: 600px;
 
 }
@@ -94,6 +85,12 @@ header{
     margin: 70px auto; 
     position: relative;
 }
+@media only screen and (max-width: 576px) {
+   .second-section-photos{ 
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+}
 .second-section-photos{
     width: 80px;
     height: 80px;
@@ -139,8 +136,8 @@ header{
     border: 0;
     border-radius: 10px;
     position: absolute;
-    top: 850px;
-    right: 330px;
+    top: 880px;
+    right: 405px;
     font-weight: 700;
     font-size: 55px;
 }
